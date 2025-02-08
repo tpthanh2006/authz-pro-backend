@@ -19,7 +19,11 @@ app.use(bodyParser.json())
 app.use(
   cors({
     origin: ["http://localhost:3000",
-            "http://authz-pro-app.vercel.app"],
+            "https://localhost:3000",
+            "http://authz-pro-app.vercel.app",
+            "https://authz-pro-app.vercel.app",
+            "http://authz-pro-app-api.onrender.com",
+            "https://authz-pro-app-api.onrender.com"],
     credentials: true,
   })
 )
