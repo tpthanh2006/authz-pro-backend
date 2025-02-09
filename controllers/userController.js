@@ -363,7 +363,7 @@ const logoutUser = asyncHandler(async(req, res) => {
   return res.status(200).json({message: "Logout successful"});
 })
 
-//dGet User
+// Get User
 const getUser = asyncHandler(async(req, res) => {
   const user = await User.findById(req.user._id);
 
@@ -637,6 +637,13 @@ const changePassword = asyncHandler(async(req, res) => {
   }
 });
 
+const loginWithGoogle = asyncHandler (async(req, res) => {
+  const {userToken} = req.body;
+  console.log(userToken);
+
+  res.send("Google Login");
+})
+
 module.exports = {
   registerUser,
   loginUser,
@@ -654,5 +661,6 @@ module.exports = {
   resetPassword,
   changePassword,
   sendLoginCode,
-  loginWithCode
+  loginWithCode,
+  loginWithGoogle
 }
