@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>{{subject}}</title>
     <style>
       body {
         background-color: #0a1930;
@@ -89,17 +89,17 @@
       </div>
       <h2>Hello <span class="color-danger">{{name}},</span></h2>
       <p>Please use the 6-digit code to log in to your account.</p>
-      <p>This code is valid for 1hr.</p>
+      <p>This code is valid for 1 hour.</p>
       <p>Thank you!</p>
 
-      <a href="{{ link }}" class="btn btn-success">Login With Code</a>
-      <h3 class="color-danger my">{{link}}</h3>
+      <h3 class="color-danger my">Login Code: {{link}}</h3>
 
       <p>If you did not initiate this login, please reset your password.</p>
       <div class="my">
-        <p>Warm Wishes,</p>
+        <p>Best Regards,</p>
         <p><b class="color-danger">AuthZ Pro</b> Team</p>
       </div>
     </div>
   </body>
 </html>
+
