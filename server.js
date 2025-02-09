@@ -23,7 +23,9 @@ app.use(
             "http://authz-pro-app.vercel.app",
             "https://authz-pro-app.vercel.app",
             "http://authz-pro-app-api.onrender.com",
-            "https://authz-pro-app-api.onrender.com"],
+            "https://authz-pro-app-api.onrender.com",
+            "http://accounts.google.com",
+            "https://accounts.google.com"],
     credentials: true,
   })
 )
